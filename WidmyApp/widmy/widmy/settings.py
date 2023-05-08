@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'widmy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'widmydb',
-        'USER': 'dstapias',
-        'PASSWORD': 'santiago_1060',
-        'HOST': 'localhost',
+        'NAME': 'widmy_db',
+        'USER': 'widmy_user',
+        'PASSWORD': '1234',
+        'HOST': '10.128.0.2',
         'PORT': '5432',
     }
 }
