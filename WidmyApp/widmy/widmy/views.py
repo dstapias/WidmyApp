@@ -8,5 +8,5 @@ def index(request):
 def healthCheck(request):
     return HttpResponse('ok')
 
-def index(request):
+def inicio(request):
     return render(request, 'inicio.html')
