@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-    <img src="/static/media/monitor.png" style="max-width: 100%; max-height: 80vh;">
-  </div>
-
+<div style="display: flex; justify-content: center; align-items: center;">
+    <form action="/historias/" method="get">
+      <input type="text" name="id" placeholder="Ingresa el ID...">
+      <button type="submit">Buscar</button>
+    </form>
+  </div>  
 {% endblock %}
