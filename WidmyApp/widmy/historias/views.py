@@ -35,3 +35,6 @@ def historia_view(request, documento):
         historia = hl.update_historia(documento, request)
         historia_dto = serializers.serialize('json', [historia])
         return HttpResponse(historia_dto, 'application/json')
+    
+def opciones_view(request):
+    return render(request, 'opcionesHistorias.html')
